@@ -15,17 +15,6 @@ function totalCupcakes(trayone,traytwo){
 console.log(totalCupcakes(2,10)); 
 
 
-// Challange 2 \
-// function totalChocolatesBars(barsPerBox, numberOfBoxes) {
-// return barsPerBox * numberOfBoxes;
-// }
-
-// let barsPerBox = 10;
-// let numberOfBoxes = 5;
-
-// console.log("The total number of chocolate bars is: " +
-// totalChocolatesBars(barsPerBox, numberOfBoxes));
-
 function totalChocolatesBars(barsPerBox, numberOfBoxes) {
 return barsPerBox * numberOfBoxes;
 }
