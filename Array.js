@@ -68,6 +68,12 @@ function Operation1() {
     console.log(`The index of Lemon Tea is: ${teas.indexOf("Lemon Tea")}`);
     console.log(`The index of White Tea is: ${teas.indexOf("White Tea")}`);
 }
+// Operation1();
+
+
+
+
+
 
 // <========= Operation2()===========>
 
@@ -83,6 +89,12 @@ function Operation2() {
     console.log("Concatenated array:\n", allTeas);
     console.log(`All teas are :=> ${allTeas.join(", ")}`)
 }
+// Operation2();
+
+
+
+
+
 
 //<========= Operation3()===========>
 
@@ -98,7 +110,10 @@ function Operation3() {
     let numbers = allArrays.concat(10, 20, 30);
     console.log(numbers);
 }
-Operation3()
+// Operation3()
+
+
+
 
 
 
@@ -252,34 +267,45 @@ function Operation4() {
         return arr.indexOf(value);
     }
 
-    // 23. find()  thi 
+    // 23. find()  this methode for return just rightmost greater index element
+    // just example of find  arr=[2,5,6,9,10,13,15]
+    // return arr.find(num => num > 10)  output=11
     function findMethod(arr) {
         return arr.find(num => num > 10);
     }
 
-    // 24. findIndex()
+    // 24. findIndex()    this methode for return just rightmost greater index 
+    // just example of findIndex  arr=[2,5,6,9,10,13,15]
+    // return arr.findIndex(num => num > 10)  output=5
     function findIndexMethod(arr) {
         return arr.findIndex(num => num > 10);
     }
 
-    // 25. some()
+    // 25. some()   return boolean value if condition setisefy or not
+    // just example of some  arr=[2,5,6,9,10,13,15]
+    // return arr.findIndex(num => num > 10)  output => true
+    // just example of some  arr=[2,5,6,9]
+    // return arr.findIndex(num => num > 10)  output => false
     function someMethod(arr) {
         return arr.some(num => num > 10);
     }
 
-    // 26. every()
+    // 26. The every() method checks whether all elements in an array satisfy a given condition.
+    // just example of every()  arr=[2,5,6,9,10,20,30,40]
+    // return arr.findIndex(num => num > 10)  output => false
+
+    // just example of every()  arr=[2,5,6,9,10,20,30,40]
+    // return arr.findIndex(num => num > 1)  output => true
     function everyMethod(arr) {
         return arr.every(num => num > 0);
     }
 
-    // 27. forEach()
+    // 27. The forEach() method executes a function once for each element in an array.
+    // just example of forEach()  arr=[2,5,6,9,10,20,30,40]
+    //  arr.forEach(num => console.log(num)); the output=> 2,5,6,9,10,20,30,40
     function forEachMethod(arr) {
         arr.forEach(num => console.log(num));
-    }
 
-    // 28. at()
-    function atMethod(arr, index) {
-        return arr.at(index);
     }
 
     // TEST THE FUNCTIONS
@@ -314,6 +340,5 @@ function Operation4() {
     console.log("Every:", everyMethod(numbers) + "\n");
     console.log("ForEach:");
     forEachMethod(numbers);
-    console.log("At:", atMethod(numbers, -1) + "\n");
-
 }
+// Operation4();
