@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript DOM Masterclass</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #0f0f0f;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .box {
+            padding: 15px;
+            margin: 10px 0;
+            background: #e5e7eb;
+            border-radius: 8px;
+        }
+
+        .active {
+            background: lightgreen;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .highlight {
+            background: rgb(139, 207, 142);
+        }
+
+        #output {
+            white-space: pre-wrap;
+            background: #eee;
+            padding: 12px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 id="heading">JavaScript DOM Masterclass</h1>
+
+        <p class="description">
+            Learn DOM manipulation from basic to advanced.
+        </p>
+
+        <div id="box" class="box">
+            This is the main box.
+        </div>
+
+        <button id="changeText">Change Text</button>
+        <button id="changeStyle">Change Style</button>
+        <button id="toggleBox">Toggle Box</button>
+
+        <hr>
+
+        <h2>Dynamic List</h2>
+
+        <input id="itemInput" type="text" placeholder="Enter an item">
+
+        <button id="addItem">Add Item</button>
+
+        <ul id="itemList">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <hr>
+
+        <h2>Form Handling</h2>
+
+        <form id="userForm">
+            <input
+                id="username"
+                type="text"
+                placeholder="Enter your name"
+                required
+            >
+
+            <br>
+
+            <input
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="formMessage"></p>
+
+        <hr>
+
+        <h2>Output</h2>
+
+        <pre id="output">DOM output appears here.</pre>
+
+    </div>
+
+    <script src="dom.js" defer></script>
+
+</body>
+</html>
+

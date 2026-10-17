@@ -89,7 +89,7 @@ function Operation2() {
     console.log("Concatenated array:\n", allTeas);
     console.log(`All teas are :=> ${allTeas.join(", ")}`)
 }
-// Operation2();
+Operation2();
 
 
 
@@ -341,4 +341,4 @@ function Operation4() {
     console.log("ForEach:");
     forEachMethod(numbers);
 }
-// Operation4();
+Operation4();
