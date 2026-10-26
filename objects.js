@@ -256,7 +256,7 @@ function operation1() {
     console.log(student9.address?.city); // undefined
 
 
-
+    
     // 8. =========================== OBJECT DESTRUCTURING ===========================
 
     console.log("\n===== 8. OBJECT DESTRUCTURING =====");
