@@ -3,7 +3,7 @@ function Operation1() {
 
     // 1.============== SELECTING ELEMENTS==============
 
-    const heading = document.getElementById("heading");
+    const heading = document.getElementById("heading"); //
 
     const description = document.querySelector(".description");
 
